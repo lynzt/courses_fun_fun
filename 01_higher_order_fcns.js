@@ -6,12 +6,12 @@ let animals = [
   {name: 'kahlyn', species: 'dog'},
   {name: 'blueberry', species: 'rabbit'},
   {name: 'molly', species: 'duck'}
-]
+];
 
-
-
-let dogs = animals.filter(animal => animal.species == 'dog');
+let isDog = animal => animal.species == 'dog';
+let dogs = animals.filter(isDog);
 
 // let dogs = animals.filter(function(animal) {
 //   return animal.species == 'dog';
 // })
+console.dir (dogs);
